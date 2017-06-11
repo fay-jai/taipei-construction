@@ -4,6 +4,10 @@
       name="Bathroom"
       :photos="bathroom">
     </carousel>
+    <carousel
+      name="Kitchen"
+      :photos="kitchen">
+    </carousel>
   </div>
 </template>
 
@@ -27,5 +31,8 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+.gallery .wrapper {
+  flex: 0 !important;
+}
 </style>

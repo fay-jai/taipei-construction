@@ -2,10 +2,9 @@
   <div id="app">
     <div class="header">
       <div class="logo">
-        Taipei Construction
+        <router-link to="home">Taipei Construction</router-link>
       </div>
       <ul class="navigation">
-        <li class="navigation-item"><router-link to="home">Home</router-link></li>
         <li class="navigation-item"><router-link to="gallery">Gallery</router-link></li>
       </ul>
     </div>
@@ -19,7 +18,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
