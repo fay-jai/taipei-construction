@@ -2,7 +2,7 @@
   <div id="app">
     <div class="header">
       <div class="logo">
-        <router-link to="home">
+        <router-link to="/">
           <img src="./assets/logo.png" />
         </router-link>
       </div>
