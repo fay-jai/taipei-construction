@@ -15,11 +15,11 @@
 import Carousel from './Carousel';
 import Images from '../data/images';
 
-const { bathroom, kitchen } = Images;
-
 export default {
   name: 'gallery',
   data() {
+    const { bathroom, kitchen } = Images;
+
     return {
       bathroom,
       kitchen,

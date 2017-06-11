@@ -2,10 +2,13 @@
   <div id="app">
     <div class="header">
       <div class="logo">
-        <router-link to="home">Taipei Construction</router-link>
+        <router-link to="home">
+          <img src="./assets/logo.png" />
+        </router-link>
       </div>
       <ul class="navigation">
         <li class="navigation-item"><router-link to="gallery">Gallery</router-link></li>
+        <li class="navigation-item"><router-link to="contact">Contact</router-link></li>
       </ul>
     </div>
     <router-view></router-view>
