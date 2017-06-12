@@ -7,8 +7,13 @@
         </router-link>
       </div>
       <ul class="navigation">
-        <li class="navigation-item"><router-link to="gallery">Gallery</router-link></li>
-        <li class="navigation-item"><router-link to="contact">Contact</router-link></li>
+        <li class="navigation-item"><router-link to="gallery">{{ galleryName }}</router-link></li>
+        <li class="navigation-item"><router-link to="contact">{{ contactName }}</router-link></li>
+        <li
+          class="navigation-item lang"
+          @click="setLang">
+          {{ languageName }}
+        </li>
       </ul>
     </div>
     <router-view></router-view>
@@ -18,6 +23,27 @@
 <script>
 export default {
   name: 'app',
+  data() {
+    return {
+      lang: 'en',
+    };
+  },
+  computed: {
+    contactName() {
+      return this.lang === 'en' ? 'Contact' : '联系';
+    },
+    galleryName() {
+      return this.lang === 'en' ? 'Gallery' : '画廊';
+    },
+    languageName() {
+      return this.lang === 'en' ? '中文' : 'English';
+    },
+  },
+  methods: {
+    setLang() {
+      this.lang = this.lang === 'en' ? 'ch' : 'en';
+    },
+  },
 };
 </script>
 
