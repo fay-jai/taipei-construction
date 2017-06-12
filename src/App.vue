@@ -47,7 +47,12 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+body {
+  background-color: powderblue;
+  color: darkred;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
