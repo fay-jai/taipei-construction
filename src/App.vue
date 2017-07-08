@@ -73,23 +73,24 @@ body {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo {
-  padding: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px
 }
 
 .navigation {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 10px;
-    padding-top: 20px
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-item {
-    padding: 0 0 0 20px;
+  padding: 0 0 0 20px;
+}
+
+.lang:hover {
+  cursor: pointer;
 }
 </style>
