@@ -25,7 +25,6 @@
       </div>
       <ul class="navigation">
         <li class="navigation-item"><router-link to="gallery">{{ galleryName }}</router-link></li>
-        <li class="navigation-item"><router-link to="contact">{{ contactName }}</router-link></li>
         <li
           class="navigation-item lang"
           @click="setLang">
@@ -46,9 +45,6 @@ export default {
     };
   },
   computed: {
-    contactName() {
-      return this.lang === 'en' ? 'Contact' : '联系';
-    },
     galleryName() {
       return this.lang === 'en' ? 'Gallery' : '画廊';
     },
