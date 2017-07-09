@@ -21,6 +21,7 @@
                 points="23.83,4.275 21.168,4.275 21.179,7.503 23.83,9.752" />
             </g>
           </svg>
+          <span class="logo-name">Taipei Construction</span>
         </router-link>
       </div>
       <ul class="navigation">
@@ -77,6 +78,23 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 10px
+}
+
+.logo {
+  position: relative;
+}
+
+.logo a {
+  color: darkred;
+  text-decoration: none;
+}
+
+.logo-name {
+  position: absolute;
+  top: 0;
+  left: 75px;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .navigation {
