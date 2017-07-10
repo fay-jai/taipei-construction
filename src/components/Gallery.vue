@@ -1,5 +1,5 @@
 <template>
-  <div class="gallery">
+  <div class="custom-gallery">
     <carousel
       :name="bathroomName"
       :photos="bathroom">
@@ -44,6 +44,14 @@ export default {
 </script>
 
 <style>
+.custom-gallery {
+  margin: 40px;
+}
+
+.carousel {
+  margin-bottom: 40px;
+}
+
 .gallery .wrapper {
   flex: 0 !important;
 }
