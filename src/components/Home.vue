@@ -24,15 +24,23 @@
         </p>
       </div>
       <div class="contact">
-        <div class="people">
-          <div class="profile">
-            <div class="name">
-              Jim Wen
-            </div>
-            <div class="photo">
-            </div>
+        <div class="profile">
+          <div class="name">Jim Wen</div>
+          <div class="photo">
+            <img src="../assets/jim_wen.jpg" />
           </div>
-          <div class="info">
+        </div>
+        <div class="info">
+          <div class="phone">
+            <div v-if="lang === 'en'">Phone</div>
+            <div v-else>电话</div>
+            <div>408-887-3345 (Jim Wen)</div>
+            <div>408-398-2831 (Lily Jiang)</div>
+          </div>
+          <div class="email">
+            <div v-if="lang === 'en'">Email</div>
+            <div v-else>邮箱</div>
+            <a href="mailto:taipeiconstruction.jn@gmail.com">taipeiconstruction.jn@gmail.com</a>
           </div>
         </div>
       </div>
@@ -56,5 +64,10 @@ export default {
 <style>
 .home {
   padding: 10px;
+}
+
+.photo img {
+  width: 150px;
+  height: 150px;
 }
 </style>
