@@ -38,14 +38,14 @@
 </template>
 
 <script>
+import store from './store';
+
 export default {
   name: 'app',
-  data() {
-    return {
-      lang: 'en',
-    };
-  },
   computed: {
+    lang() {
+      return store.state.lang;
+    },
     galleryName() {
       return this.lang === 'en' ? 'Gallery' : '画廊';
     },
@@ -55,7 +55,11 @@ export default {
   },
   methods: {
     setLang() {
-      this.lang = this.lang === 'en' ? 'ch' : 'en';
+      if (this.lang === 'en') {
+        store.dispatch('setToChinese');
+      } else {
+        store.dispatch('setToEnglish');
+      }
     },
   },
 };
