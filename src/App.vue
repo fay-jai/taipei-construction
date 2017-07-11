@@ -69,6 +69,7 @@ export default {
 body {
   background-color: powderblue;
   color: darkred;
+  margin: 0;
 }
 
 #app {
@@ -79,6 +80,8 @@ body {
 
 .header {
   align-items: center;
+  background-color: white;
+  border-bottom: 2px solid darkred;
   display: flex;
   justify-content: space-between;
   padding: 10px
